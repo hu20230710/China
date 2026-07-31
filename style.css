@@ -1,0 +1,633 @@
+/* =========================
+   1. 网页基础设置
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  color: #ffffff;
+
+  background-color: #0d0d0d;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   2. 顶部导航栏
+========================= */
+
+header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 6%;
+
+  background-color: rgba(10, 10, 10, 0.92);
+
+  z-index: 10;
+}
+
+
+.logo {
+  color: #e5bd70;
+
+  font-size: 18px;
+
+  letter-spacing: 3px;
+}
+
+
+nav {
+  display: flex;
+
+  gap: 25px;
+}
+
+
+nav a {
+  color: #dddddd;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+
+nav a:hover {
+  color: #e5bd70;
+}
+
+
+/* =========================
+   3. 通用文字
+========================= */
+
+.kleiner-titel {
+  margin-bottom: 18px;
+
+  color: #e5bd70;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 4px;
+}
+
+
+/* =========================
+   4. 首页
+========================= */
+
+.start {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 120px 8% 70px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(185, 37, 37, 0.35),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #180b0b,
+      #070707
+    );
+}
+
+
+.start-inhalt {
+  max-width: 950px;
+}
+
+
+.start h1 {
+  margin-bottom: 25px;
+
+  font-family: Georgia, serif;
+
+  font-size: 75px;
+
+  font-weight: normal;
+
+  line-height: 1.05;
+}
+
+
+.start h1 span {
+  display: block;
+
+  color: #e5bd70;
+}
+
+
+.start-text {
+  max-width: 650px;
+
+  margin: 0 auto 35px;
+
+  color: #cccccc;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+
+button {
+  padding: 14px 28px;
+
+  border: 1px solid #e5bd70;
+
+  border-radius: 30px;
+
+  color: white;
+
+  background-color: transparent;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+button:hover {
+  color: #19130b;
+
+  background-color: #e5bd70;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   5. 介绍区域
+========================= */
+
+.einleitung {
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 110px 25px;
+
+  text-align: center;
+}
+
+
+.einleitung h2 {
+  margin-bottom: 25px;
+
+  font-family: Georgia, serif;
+
+  font-size: 48px;
+
+  font-weight: normal;
+}
+
+
+.einleitung > p:last-child {
+  color: #aaaaaa;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   6. 旅游目的地
+========================= */
+
+.reiseziele {
+  padding: 100px 6%;
+
+  background-color: #121212;
+}
+
+
+.reiseziele > h2 {
+  margin-bottom: 50px;
+
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+
+  font-weight: normal;
+}
+
+
+.karten {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+.karte {
+  min-height: 350px;
+
+  padding: 35px;
+
+  border: 1px solid rgba(229, 189, 112, 0.25);
+
+  border-radius: 15px;
+
+  background-color: #191919;
+
+  transition: 0.3s;
+}
+
+
+.karte:hover {
+  border-color: #e5bd70;
+
+  box-shadow: 0 0 30px rgba(229, 189, 112, 0.15);
+
+  transform: translateY(-8px);
+}
+
+
+.symbol {
+  height: 130px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 75px;
+}
+
+
+.karte h3 {
+  margin-bottom: 15px;
+
+  color: #e5bd70;
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
+  font-weight: normal;
+}
+
+
+.karte p {
+  margin-bottom: 25px;
+
+  color: #b8b8b8;
+
+  line-height: 1.7;
+}
+
+
+.karte span {
+  color: #e5bd70;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   7. 中国文化
+========================= */
+
+.kultur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 110px 8%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2a1010,
+      #0e0e0e
+    );
+}
+
+
+.kultur-text {
+  max-width: 550px;
+}
+
+
+.kultur-text h2 {
+  margin-bottom: 25px;
+
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+
+  font-weight: normal;
+}
+
+
+.kultur-text > p:last-child {
+  color: #bbbbbb;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+.kultur-liste {
+  display: flex;
+
+  gap: 20px;
+}
+
+
+.kultur-liste div {
+  width: 150px;
+
+  padding: 25px 15px;
+
+  border: 1px solid rgba(229, 189, 112, 0.3);
+
+  border-radius: 15px;
+
+  text-align: center;
+}
+
+
+.kultur-liste span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-size: 45px;
+}
+
+
+.kultur-liste h3 {
+  margin-bottom: 10px;
+
+  color: #e5bd70;
+}
+
+
+.kultur-liste p {
+  color: #aaaaaa;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   8. 随机旅行推荐
+========================= */
+
+.empfehlung {
+  padding: 110px 20px;
+
+  text-align: center;
+}
+
+
+.empfehlung h2 {
+  margin-bottom: 20px;
+
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+
+  font-weight: normal;
+}
+
+
+.empfehlung > p {
+  margin-bottom: 30px;
+
+  color: #aaaaaa;
+}
+
+
+.ergebnis {
+  max-width: 500px;
+
+  margin: 40px auto 0;
+
+  padding: 35px;
+
+  border: 1px solid rgba(229, 189, 112, 0.4);
+
+  border-radius: 18px;
+
+  background-color: #171717;
+}
+
+
+#ergebnisSymbol {
+  margin-bottom: 15px;
+
+  font-size: 65px;
+}
+
+
+.ergebnis h3 {
+  margin-bottom: 15px;
+
+  color: #e5bd70;
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
+  font-weight: normal;
+}
+
+
+.ergebnis p {
+  color: #bbbbbb;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   9. 结尾区域
+========================= */
+
+.abschluss {
+  padding: 120px 20px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4a1515,
+      #17100c
+    );
+}
+
+
+.abschluss h2 {
+  margin-bottom: 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+
+  font-weight: normal;
+}
+
+
+.abschluss p {
+  margin-bottom: 30px;
+
+  color: #e5bd70;
+
+  font-size: 22px;
+}
+
+
+.abschluss a {
+  color: white;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #e5bd70;
+
+  padding-bottom: 5px;
+}
+
+
+/* =========================
+   10. 页脚
+========================= */
+
+footer {
+  padding: 30px;
+
+  color: #777777;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   11. 平板适配
+========================= */
+
+@media (max-width: 900px) {
+
+  .karten {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .kultur {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+}
+
+
+/* =========================
+   12. 手机适配
+========================= */
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 16px;
+  }
+
+
+  .logo {
+    font-size: 13px;
+  }
+
+
+  nav {
+    gap: 10px;
+  }
+
+
+  nav a {
+    font-size: 12px;
+  }
+
+
+  nav a:nth-child(3),
+  nav a:nth-child(4) {
+    display: none;
+  }
+
+
+  .start h1 {
+    font-size: 45px;
+  }
+
+
+  .einleitung h2,
+  .reiseziele > h2,
+  .kultur-text h2,
+  .empfehlung h2,
+  .abschluss h2 {
+    font-size: 36px;
+  }
+
+
+  .karten {
+    grid-template-columns: 1fr;
+  }
+
+
+  .kultur-liste {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+
+  .kultur-liste div {
+    width: 100%;
+  }
+
+}
