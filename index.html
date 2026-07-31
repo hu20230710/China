@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- 让网页适应手机和平板 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>China entdecken</title>
+
+  <!-- 连接 CSS 文件 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       顶部导航栏
+  ========================== -->
+  <header>
+
+    <h2 class="logo">CHINA ENTDECKEN</h2>
+
+    <nav>
+      <a href="#start">Start</a>
+      <a href="#reiseziele">Reiseziele</a>
+      <a href="#kultur">Kultur</a>
+      <a href="#empfehlung">Reisetipp</a>
+    </nav>
+
+  </header>
+
+
+  <!-- =========================
+       首页
+  ========================== -->
+  <section class="start" id="start">
+
+    <div class="start-inhalt">
+
+      <p class="kleiner-titel">
+        EINE REISE VOLLER GESCHICHTEN
+      </p>
+
+      <h1>
+        Entdecke China.
+        <span>Erlebe mehr als eine Reise.</span>
+      </h1>
+
+      <p class="start-text">
+        Alte Geschichte, moderne Städte, beeindruckende Natur
+        und eine vielfältige Kultur warten auf dich.
+      </p>
+
+      <button onclick="zuReisezielen()">
+        Reise beginnen
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       简单介绍
+  ========================== -->
+  <section class="einleitung">
+
+    <p class="kleiner-titel">
+      WILLKOMMEN IN CHINA
+    </p>
+
+    <h2>
+      Ein Land. Viele verschiedene Welten.
+    </h2>
+
+    <p>
+      China ist nicht nur Peking oder Shanghai.
+      Jede Region besitzt ihre eigene Geschichte,
+      Landschaft, Küche und Lebensweise.
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       六个旅游目的地
+  ========================== -->
+  <section class="reiseziele" id="reiseziele">
+
+    <p class="kleiner-titel">
+      SECHS REISEZIELE
+    </p>
+
+    <h2>
+      Wohin möchtest du reisen?
+    </h2>
+
+
+    <div class="karten">
+
+      <!-- 北京 -->
+      <div class="karte beijing">
+
+        <div class="symbol">🏯</div>
+
+        <h3>Peking</h3>
+
+        <p>
+          Entdecke die Verbotene Stadt,
+          traditionelle Hutongs und die Chinesische Mauer.
+        </p>
+
+        <span>Geschichte und Tradition</span>
+
+      </div>
+
+
+      <!-- 上海 -->
+      <div class="karte shanghai">
+
+        <div class="symbol">🌆</div>
+
+        <h3>Shanghai</h3>
+
+        <p>
+          Erlebe moderne Architektur,
+          internationale Kultur und historische Straßen.
+        </p>
+
+        <span>Modernes China</span>
+
+      </div>
+
+
+      <!-- 西安 -->
+      <div class="karte xian">
+
+        <div class="symbol">🏺</div>
+
+        <h3>Xi’an</h3>
+
+        <p>
+          Besuche die Terrakotta-Armee
+          und entdecke den Beginn der alten Seidenstraße.
+        </p>
+
+        <span>Geschichte erleben</span>
+
+      </div>
+
+
+      <!-- 四川 -->
+      <div class="karte sichuan">
+
+        <div class="symbol">🐼</div>
+
+        <h3>Sichuan</h3>
+
+        <p>
+          Begegne Pandas, entdecke grüne Berge
+          und probiere die berühmte Sichuan-Küche.
+        </p>
+
+        <span>Natur und Essen</span>
+
+      </div>
+
+
+      <!-- 云南 -->
+      <div class="karte yunnan">
+
+        <div class="symbol">🍃</div>
+
+        <h3>Yunnan</h3>
+
+        <p>
+          Genieße Tee, alte Dörfer,
+          Berge und die kulturelle Vielfalt Südwestchinas.
+        </p>
+
+        <span>Ruhe und Landschaft</span>
+
+      </div>
+
+
+      <!-- 新疆 -->
+      <div class="karte xinjiang">
+
+        <div class="symbol">⭐</div>
+
+        <h3>Xinjiang</h3>
+
+        <p>
+          Reise durch Wüsten, Seen,
+          hohe Berge und einen unendlichen Sternenhimmel.
+        </p>
+
+        <span>Abenteuer und Freiheit</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       中国文化
+  ========================== -->
+  <section class="kultur" id="kultur">
+
+    <div class="kultur-text">
+
+      <p class="kleiner-titel">
+        KULTUR ERLEBEN
+      </p>
+
+      <h2>
+        China kann man nicht nur sehen.
+      </h2>
+
+      <p>
+        Man muss China hören, schmecken und erleben.
+        Trinke chinesischen Tee, besuche einen Nachtmarkt,
+        lerne traditionelle Feste kennen und sprich mit den Menschen.
+      </p>
+
+    </div>
+
+
+    <div class="kultur-liste">
+
+      <div>
+        <span>🍵</span>
+        <h3>Tee</h3>
+        <p>Ruhe und Gastfreundschaft</p>
+      </div>
+
+      <div>
+        <span>🥟</span>
+        <h3>Essen</h3>
+        <p>Viele Regionen, viele Geschmäcker</p>
+      </div>
+
+      <div>
+        <span>🏮</span>
+        <h3>Feste</h3>
+        <p>Tradition und Gemeinschaft</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       随机旅行推荐
+  ========================== -->
+  <section class="empfehlung" id="empfehlung">
+
+    <p class="kleiner-titel">
+      DEIN NÄCHSTES REISEZIEL
+    </p>
+
+    <h2>
+      Du weißt noch nicht, wohin?
+    </h2>
+
+    <p>
+      Klicke auf den Knopf und erhalte eine zufällige Reiseempfehlung.
+    </p>
+
+    <button onclick="reisezielFinden()">
+      Reiseziel finden
+    </button>
+
+
+    <!-- JavaScript 会修改这里的内容 -->
+    <div class="ergebnis" id="ergebnis">
+
+      <div id="ergebnisSymbol">🎁</div>
+
+      <h3 id="ergebnisTitel">
+        Deine Reise wartet auf dich.
+      </h3>
+
+      <p id="ergebnisText">
+        Entdecke ein neues Reiseziel in China.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       结尾
+  ========================== -->
+  <section class="abschluss">
+
+    <h2>
+      China ist nicht nur ein Ort.
+    </h2>
+
+    <p>
+      China ist eine Erfahrung.
+    </p>
+
+    <a href="#start">
+      Zurück zum Anfang
+    </a>
+
+  </section>
+
+
+  <!-- 页脚 -->
+  <footer>
+
+    <p>
+      CHINA ENTDECKEN · Eine digitale Reise durch China
+    </p>
+
+  </footer>
+
+
+  <!-- 连接 JavaScript 文件 -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
